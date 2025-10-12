@@ -11,18 +11,18 @@ const AboutSection: React.FC = () => {
     { label: 'City', value: 'Anuradhapura,Sri Lanka' },
     // { label: 'Age', value: '3' },
     { label: 'Degree', value: 'Pending' },
-    { label: 'Email', value: 'dilinibhagya53@.com' },
+    { label: 'Email', value: 'dilinibhagya53@gmail.com' },
     { label: 'Freelance', value: 'Available' },
   ];
 
-  const skills = [
-    { name: 'HTML', level: 100 },
-    { name: 'CSS', level: 90 },
-    { name: 'JavaScript', level: 75 },
-    { name: 'PHP', level: 80 },
-    { name: 'WordPress/CMS', level: 90 },
-    { name: 'Photoshop', level: 55 },
-  ];
+  // const skills = [
+  //   { name: 'HTML', level: 100 },
+  //   { name: 'CSS', level: 90 },
+  //   { name: 'JavaScript', level: 75 },
+  //   { name: 'PHP', level: 80 },
+  //   { name: 'WordPress/CMS', level: 90 },
+  //   { name: 'Photoshop', level: 55 },
+  // ];
 
   const counts = [
     { icon: FaSmile, number: '232', label: 'Happy Clients' },
