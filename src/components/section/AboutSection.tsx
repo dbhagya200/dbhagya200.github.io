@@ -52,7 +52,7 @@ const AboutSection: React.FC = () => {
         <div className="grid md:grid-cols-3 gap-12 mb-16">
           <div className="md:col-span-1">
             <img
-              src="src/assets/img/portfolio/nbg-1.png"
+              src="src\assets\img\portfolio\nbg-1.png"
               alt="dilini bhagya"
               className="w-full h-120 object-cover rounded-lg"
             />
