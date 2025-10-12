@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaBars } from 'react-icons/fa';
+import { FaTwitter, FaFacebook, FaLinkedin, FaBars, FaGithub } from 'react-icons/fa';
 
 const Header: React.FC = () => {
   const [activeSection, setActiveSection] = useState('header');
@@ -36,7 +36,7 @@ const Header: React.FC = () => {
   }, []);
 
   const navItems = [
-    { href: '#header', label: 'Home' },
+    { href: 'header', label: 'Home' },
     { href: '#about', label: 'About' },
     { href: '#resume', label: 'Resume' },
     // { href: '#services', label: 'Services' },
@@ -45,13 +45,14 @@ const Header: React.FC = () => {
   ];
 
   const socialLinks = [
-    { href: '#', icon: FaTwitter, name: 'Twitter' },
-    { href: '#', icon: FaFacebook, name: 'Facebook' },
-    { href: '#', icon: FaInstagram, name: 'Instagram' },
-    { href: '#', icon: FaLinkedin, name: 'LinkedIn' }
+    { href: 'https://x.com/bhagya_dil14146', icon: FaTwitter, name: 'Twitter' },
+    { href: 'https://www.facebook.com/sanduni.bhagya.904', icon: FaFacebook, name: 'Facebook' },
+    { href: 'https://github.com/dbhagya200', icon: FaGithub, name: 'GitHub' },
+    { href: 'https://www.linkedin.com/in/dilini-bhagya-warnekulasooriya/', icon: FaLinkedin, name: 'LinkedIn' }
   ];
 
   return (
+    
     <header 
       id="header" 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${
@@ -108,7 +109,7 @@ const Header: React.FC = () => {
                   <a
                     key={social.name}
                     href={social.href}
-                    className="w-10 h-10 md:w-12 md:h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-[#18d26e] transition-colors duration-300"
+                    className="w-10 h-10 md:w-12 md:h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-[#118a49] transition-colors duration-300"
                     aria-label={social.name}
                   >
                     <IconComponent className="text-sm md:text-base" />
@@ -121,6 +122,11 @@ const Header: React.FC = () => {
           // Compact header when scrolled
           <div className="flex items-center justify-between w-full">
             <h1 className="text-xl md:text-2xl font-bold text-white font-poppins">
+              <img
+                src="src/assets/img/bg3.png"
+                alt="Logo"
+                className="inline-block w-13 h-13 mr-1 p-1 rounded-full object-cover "
+              />
               <a href="#header" className="text-white hover:text-white">
                 Dilini Bhagya
               </a>

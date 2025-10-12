@@ -1,7 +1,7 @@
 import Layout from './components/Layout';
 import AboutSection from './components/section/AboutSection';
 import ResumeSection from './components/section/ResumeSection';
-import ServicesSection from './components/section/ServiceSection';
+// import ServicesSection from './components/section/ServiceSection';
 import PortfolioSection from './components/section/PortfolioSection';
 import ContactSection from './components/section/ContactSection';
 import Home from './components/Home';

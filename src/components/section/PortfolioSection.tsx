@@ -5,21 +5,21 @@ const PortfolioSection: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState('*');
 
   const portfolioItems = [
-    { id: 1, category: 'app', title: 'App 1', image: '' },
-    { id: 2, category: 'web', title: 'Web 3', image: '' },
-    { id: 3, category: 'app', title: 'App 2', image: '' },
-    { id: 4, category: 'card', title: 'Card 2', image: '' },
-    { id: 5, category: 'web', title: 'Web 2', image: '' },
-    { id: 6, category: 'app', title: 'App 3', image: '' },
-    { id: 7, category: 'card', title: 'Card 1', image: '' },
-    { id: 8, category: 'card', title: 'Card 3', image: '' },
-    { id: 9, category: 'web', title: 'Web 3', image: '' },
+    { id: 1, category: 'web', title: 'Cocothumb Project', image: 'src/assets/img/portfolio/cocothumb.png',Link:'https://github.com/dbhagya200/cocothumb' },
+    { id: 2, category: 'web', title: 'Guppy-Zone Spring-Boot Project', image: 'src/assets/img/portfolio/Guppy-Zone.png',Link:'https://github.com/dbhagya200/Guppy-Zone-Project-New' },
+    { id: 3, category: 'web', title: 'EchoCart JavaEE Project', image: 'src/assets/img/portfolio/EchoCart.png',Link:'https://github.com/dbhagya200/AAD-Assignment-1' },
+    { id: 4, category: 'web', title: 'MediCare HTML/PHP Project', image: 'src/assets/img/portfolio/MediCare.png',Link:'https://github.com/Pathum456/bhagya_project' },
+    { id: 5, category: 'app', title: 'Notes-App React-Native Project ', image: 'src/assets/img/portfolio/notes.png',Link:'https://github.com/dbhagya200/MY-Notes-MobileApp' },
+    { id: 6, category: 'web', title: 'Logistics-Management React Project', image: 'src/assets/img/portfolio/logistics.png',Link:'https://github.com/dbhagya200/Logistics-Management-System-FrontEnd' },
+    // { id: 7, category: 'card', title: 'Card 1', image: '' },
+    // { id: 8, category: 'card', title: 'Card 3', image: '' },
+    // { id: 9, category: 'web', title: 'Web 3', image: '' },
   ];
 
   const filters = [
     { key: '*', label: 'All' },
     { key: 'app', label: 'App' },
-    { key: 'card', label: 'Card' },
+    // { key: 'card', label: 'Card' },
     { key: 'web', label: 'Web' },
   ];
 
@@ -31,7 +31,7 @@ const PortfolioSection: React.FC = () => {
     <section id="portfolio" className="py-20 bg-black/90 min-h-screen">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-sm uppercase tracking-wider text-gray-400 mb-2">Portfolio</h2>
+          <h2 className="text-m uppercase tracking-wider text-gray-400 mb-2">Portfolio</h2>
           <div className="w-20 h-px bg-green-400 inline-block mb-4"></div>
           <p className="text-3xl font-bold text-white uppercase">My Works</p>
         </div>
@@ -65,7 +65,7 @@ const PortfolioSection: React.FC = () => {
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                className="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-110"
               />
               
               {/* Overlay */}
@@ -81,12 +81,16 @@ const PortfolioSection: React.FC = () => {
                   <div className="flex justify-center gap-4 mt-4 portfolio-links">
                     <a
                       href={item.image}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-white text-2xl hover:text-green-300 transition-colors portfolio-lightbox"
                     >
                       <FaPlus />
                     </a>
                     <a
-                      href="portfolio-details.html"
+                      href={item.Link}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-white text-2xl hover:text-green-300 transition-colors portfolio-details-lightbox"
                     >
                       <FaLink />

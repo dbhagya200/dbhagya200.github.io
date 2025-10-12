@@ -6,7 +6,7 @@ const ResumeSection: React.FC = () => {
   const education = [
     {
       degree: 'Graduate Diploma, Computer Software Engineering',
-      period: '2023 - 2015',
+      period: '2023 - 2025',
       institution: 'IJSE-Institute of Software Engineering',
       description: 'Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend'
     },

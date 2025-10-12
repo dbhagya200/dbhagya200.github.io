@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../index.css';
-import { FaSmile, FaFolder, FaHeadset, FaAward, FaChevronRight } from 'react-icons/fa';
-import { RiStoreLine, RiBarChartBoxLine, RiCalendarTodoLine, RiPaintBrushLine, RiDatabase2Line, RiGradienterLine } from 'react-icons/ri';
+import {  FaChevronRight } from 'react-icons/fa';
+// import { RiStoreLine, RiBarChartBoxLine, RiCalendarTodoLine, RiPaintBrushLine, RiDatabase2Line, RiGradienterLine } from 'react-icons/ri';
 
 const AboutSection: React.FC = () => {
   const personalInfo = [
@@ -24,21 +24,21 @@ const AboutSection: React.FC = () => {
   //   { name: 'Photoshop', level: 55 },
   // ];
 
-  const counts = [
-    { icon: FaSmile, number: '232', label: 'Happy Clients' },
-    { icon: FaFolder, number: '521', label: 'Projects' },
-    { icon: FaHeadset, number: '1463', label: 'Hours Of Support' },
-    { icon: FaAward, number: '24', label: 'Awards' },
-  ];
+  // const counts = [
+  //   { icon: FaSmile, number: '232', label: 'Happy Clients' },
+  //   { icon: FaFolder, number: '521', label: 'Projects' },
+  //   { icon: FaHeadset, number: '1463', label: 'Hours Of Support' },
+  //   { icon: FaAward, number: '24', label: 'Awards' },
+  // ];
 
-  const interests = [
-    { icon: RiStoreLine, name: 'Lorem Ipsum', color: '#ffbb2c' },
-    { icon: RiBarChartBoxLine, name: 'Dolor Sitema', color: '#5578ff' },
-    { icon: RiCalendarTodoLine, name: 'Sed perspiciatis', color: '#e80368' },
-    { icon: RiPaintBrushLine, name: 'Magni Dolores', color: '#e361ff' },
-    { icon: RiDatabase2Line, name: 'Nemo Enim', color: '#47aeff' },
-    { icon: RiGradienterLine, name: 'Eiusmod Tempor', color: '#ffa76e' },
-  ];
+  // const interests = [
+  //   { icon: RiStoreLine, name: 'Lorem Ipsum', color: '#ffbb2c' },
+  //   { icon: RiBarChartBoxLine, name: 'Dolor Sitema', color: '#5578ff' },
+  //   { icon: RiCalendarTodoLine, name: 'Sed perspiciatis', color: '#e80368' },
+  //   { icon: RiPaintBrushLine, name: 'Magni Dolores', color: '#e361ff' },
+  //   { icon: RiDatabase2Line, name: 'Nemo Enim', color: '#47aeff' },
+  //   { icon: RiGradienterLine, name: 'Eiusmod Tempor', color: '#ffa76e' },
+  // ];
 
   return (
     <section id="about" className="py-20 bg-black/90 min-h-screen">
@@ -52,7 +52,7 @@ const AboutSection: React.FC = () => {
         <div className="grid md:grid-cols-3 gap-12 mb-16">
           <div className="md:col-span-1">
             <img
-              src="src\assets\img\portfolio\nbg-1.png"
+              src="src/assets/img/nbg-1.png"
               alt="dilini bhagya"
               className="w-full h-120 object-cover rounded-lg"
             />
@@ -95,7 +95,7 @@ const AboutSection: React.FC = () => {
         </div>
 
         {/* Counts */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        {/* <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {counts.map((count, index) => {
             const IconComponent = count.icon;
             return (
@@ -108,7 +108,7 @@ const AboutSection: React.FC = () => {
               </div>
             );
           })}
-        </div>
+        </div> */}
 
         {/* Skills */}
         {/* <div className="mb-16">
@@ -132,7 +132,7 @@ const AboutSection: React.FC = () => {
         </div> */}
 
         {/* Interests */}
-        <div>
+        {/* <div>
           <h3 className="text-3xl font-bold text-white text-center mb-8">Interests</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {interests.map((interest, index) => {
@@ -151,7 +151,7 @@ const AboutSection: React.FC = () => {
               );
             })}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
