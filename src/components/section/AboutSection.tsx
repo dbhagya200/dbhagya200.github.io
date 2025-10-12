@@ -5,13 +5,13 @@ import { RiStoreLine, RiBarChartBoxLine, RiCalendarTodoLine, RiPaintBrushLine, R
 
 const AboutSection: React.FC = () => {
   const personalInfo = [
-    { label: 'Birthday', value: '1 May 1995' },
-    { label: 'Website', value: 'www.example.com' },
-    { label: 'Phone', value: '+123 456 7890' },
-    { label: 'City', value: 'New York, USA' },
-    { label: 'Age', value: '30' },
-    { label: 'Degree', value: 'Master' },
-    { label: 'Email', value: 'email@example.com' },
+    { label: 'Birthday', value: '5 February 2000' },
+    // { label: 'Website', value: 'www.example.com' },
+    { label: 'Phone', value: '+9474 099 6275' },
+    { label: 'City', value: 'Anuradhapura,Sri Lanka' },
+    // { label: 'Age', value: '3' },
+    { label: 'Degree', value: 'Pending' },
+    { label: 'Email', value: 'dilinibhagya53@.com' },
     { label: 'Freelance', value: 'Available' },
   ];
 
@@ -52,15 +52,15 @@ const AboutSection: React.FC = () => {
         <div className="grid md:grid-cols-3 gap-12 mb-16">
           <div className="md:col-span-1">
             <img
-              src="/assets/img/me.jpg"
-              alt="Emily Jones"
-              className="w-full h-80 object-cover rounded-lg"
+              src="src/assets/img/portfolio/nbg-1.png"
+              alt="dilini bhagya"
+              className="w-full h-120 object-cover rounded-lg"
             />
           </div>
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold text-green-500 mb-4">UI/UX & Graphic Designer</h3>
+            <h3 className="text-2xl font-bold text-green-500 mb-4">Full-Stack Developer</h3>
             <p className="text-gray-300 italic mb-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Hello, I am Dilini Bhagya, pursuing graduation to become a professional software engineer. Permanent residence in Anuradhapura, Sri Lanka. I am passionate about using technology to create innovative solutions to grow businesses and improve people's lives.
             </p>
             
             <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -88,9 +88,9 @@ const AboutSection: React.FC = () => {
               </div>
             </div>
             
-            <p className="text-gray-300">
+            {/* <p className="text-gray-300">
               Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-            </p>
+            </p> */}
           </div>
         </div>
 
@@ -111,7 +111,7 @@ const AboutSection: React.FC = () => {
         </div>
 
         {/* Skills */}
-        <div className="mb-16">
+        {/* <div className="mb-16">
           <h3 className="text-3xl font-bold text-white text-center mb-8">Skills</h3>
           <div className="grid md:grid-cols-2 gap-8">
             {skills.map((skill, index) => (
@@ -129,7 +129,7 @@ const AboutSection: React.FC = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Interests */}
         <div>
