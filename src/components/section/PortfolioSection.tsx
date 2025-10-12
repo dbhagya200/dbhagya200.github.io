@@ -5,15 +5,15 @@ const PortfolioSection: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState('*');
 
   const portfolioItems = [
-    { id: 1, category: 'app', title: 'App 1', image: '/assets/img/portfolio/portfolio-1.jpg' },
-    { id: 2, category: 'web', title: 'Web 3', image: '/assets/img/portfolio/portfolio-2.jpg' },
-    { id: 3, category: 'app', title: 'App 2', image: '/assets/img/portfolio/portfolio-3.jpg' },
-    { id: 4, category: 'card', title: 'Card 2', image: '/assets/img/portfolio/portfolio-4.jpg' },
-    { id: 5, category: 'web', title: 'Web 2', image: '/assets/img/portfolio/portfolio-5.jpg' },
-    { id: 6, category: 'app', title: 'App 3', image: '/assets/img/portfolio/portfolio-6.jpg' },
-    { id: 7, category: 'card', title: 'Card 1', image: '/assets/img/portfolio/portfolio-7.jpg' },
-    { id: 8, category: 'card', title: 'Card 3', image: '/assets/img/portfolio/portfolio-8.jpg' },
-    { id: 9, category: 'web', title: 'Web 3', image: '/assets/img/portfolio/portfolio-9.jpg' },
+    { id: 1, category: 'app', title: 'App 1', image: '' },
+    { id: 2, category: 'web', title: 'Web 3', image: '' },
+    { id: 3, category: 'app', title: 'App 2', image: '' },
+    { id: 4, category: 'card', title: 'Card 2', image: '' },
+    { id: 5, category: 'web', title: 'Web 2', image: '' },
+    { id: 6, category: 'app', title: 'App 3', image: '' },
+    { id: 7, category: 'card', title: 'Card 1', image: '' },
+    { id: 8, category: 'card', title: 'Card 3', image: '' },
+    { id: 9, category: 'web', title: 'Web 3', image: '' },
   ];
 
   const filters = [
