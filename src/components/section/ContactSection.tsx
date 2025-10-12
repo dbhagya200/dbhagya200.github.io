@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-import { FaMap, FaShareAlt, FaEnvelope, FaPhone, FaTwitter, FaFacebook, FaInstagram, FaSkype, FaLinkedin } from 'react-icons/fa';
+import { FaMap, FaShareAlt, FaEnvelope, FaPhone, FaTwitter, FaFacebook, FaInstagram, FaSkype, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const ContactSection: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    subject: '',
     message: ''
   });
+
+  
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -20,13 +21,20 @@ const ContactSection: React.FC = () => {
     e.preventDefault();
     // Handle form submission here
     console.log('Form submitted:', formData);
+
+      const subject = encodeURIComponent("New message from portfolio");
+      const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+  );
+
+  window.location.href = `mailto:dilinibhagya53@gmail.com?subject=${subject}&body=${body}`;
   };
 
   const contactInfo = [
     {
       icon: FaMap,
       title: 'My Address',
-      content: 'A108 Adam Street, New York, NY 535022'
+      content: 'No 18, Anula mawatha, Pandulagama, Anuradhapura, Sri Lanka'
     },
     {
       icon: FaShareAlt,
@@ -36,21 +44,20 @@ const ContactSection: React.FC = () => {
     {
       icon: FaEnvelope,
       title: 'Email Me',
-      content: 'contact@example.com'
+      content: 'dilinibhagya53@gmail.com'
     },
     {
       icon: FaPhone,
       title: 'Call Me',
-      content: '+1 5589 55488 55'
+      content: '+94 74 099 6275 /+94 70 140 1381'
     }
   ];
 
   const socialLinks = [
-    { href: '#', icon: FaTwitter, name: 'Twitter' },
-    { href: '#', icon: FaFacebook, name: 'Facebook' },
-    { href: '#', icon: FaInstagram, name: 'Instagram' },
-    { href: '#', icon: FaSkype, name: 'Skype' },
-    { href: '#', icon: FaLinkedin, name: 'LinkedIn' },
+    { href: 'https://x.com/bhagya_dil14146', icon: FaTwitter, name: 'Twitter' },
+    { href: 'https://www.facebook.com/sanduni.bhagya.904', icon: FaFacebook, name: 'Facebook' },
+    { href: 'https://github.com/dbhagya200', icon: FaGithub, name: 'GitHub' },
+    { href: 'https://www.linkedin.com/in/dilini-bhagya-warnekulasooriya/', icon: FaLinkedin, name: 'LinkedIn' },
   ];
 
   return (
@@ -68,7 +75,7 @@ const ContactSection: React.FC = () => {
             return (
               <div key={index} className="bg-white/8 rounded-lg p-6 info-box">
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white text-xl mr-4 flex-shrink-0">
+                  <div className="w-14 h-14 bg-green-700 rounded-full flex items-center justify-center text-white text-xl mr-4 flex-shrink-0">
                     <IconComponent />
                   </div>
                   <div>
@@ -81,7 +88,7 @@ const ContactSection: React.FC = () => {
                             <a
                               key={idx}
                               href={social.href}
-                              className="text-white/70 hover:text-green-500 transition-colors text-lg"
+                              className="text-white/70 hover:text-green-500 transition-colors text-2xl"
                               aria-label={social.name}
                             >
                               <SocialIcon />
@@ -125,7 +132,7 @@ const ContactSection: React.FC = () => {
               />
             </div>
           </div>
-          <div className="mb-6">
+          {/* <div className="mb-6">
             <input
               type="text"
               name="subject"
@@ -135,7 +142,7 @@ const ContactSection: React.FC = () => {
               required
               className="w-full bg-white/8 border-0 text-white px-4 py-3 rounded placeholder-gray-400 focus:bg-white/11 transition-colors"
             />
-          </div>
+          </div> */}
           <div className="mb-6">
             <textarea
               name="message"
@@ -150,7 +157,7 @@ const ContactSection: React.FC = () => {
           <div className="text-center">
             <button
               type="submit"
-              className="bg-green-500 text-white px-8 py-3 rounded hover:bg-green-600 transition-colors"
+              className="bg-green-600 text-white px-8 py-3 rounded hover:bg-green-800 transition-colors"
             >
               Send Message
             </button>

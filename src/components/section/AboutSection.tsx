@@ -44,7 +44,7 @@ const AboutSection: React.FC = () => {
     <section id="about" className="py-20 bg-black/90 min-h-screen">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-sm uppercase tracking-wider text-gray-400 mb-2">About</h2>
+          <h2 className="text-m uppercase tracking-wider text-gray-400 mb-2">About</h2>
           <div className="w-20 h-px bg-green-400 inline-block mb-4"></div>
           <p className="text-3xl font-bold text-white uppercase">Learn more about me</p>
         </div>

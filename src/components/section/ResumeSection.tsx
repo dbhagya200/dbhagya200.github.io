@@ -1,51 +1,62 @@
 import React from 'react';
+import { Download} from "lucide-react"
+
 
 const ResumeSection: React.FC = () => {
   const education = [
     {
-      degree: 'Master of Fine Arts & Graphic Design',
-      period: '2015 - 2016',
-      institution: 'Rochester Institute of Technology, Rochester, NY',
+      degree: 'Graduate Diploma, Computer Software Engineering',
+      period: '2023 - 2015',
+      institution: 'IJSE-Institute of Software Engineering',
       description: 'Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend'
     },
-    {
-      degree: 'Bachelor of Fine Arts & Graphic Design',
-      period: '2010 - 2014',
-      institution: 'Rochester Institute of Technology, Rochester, NY',
-      description: 'Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila'
-    }
+      // {
+      //   degree: 'Bachelor of Fine Arts & Graphic Design',
+      //   period: '2010 - 2014',
+      //   institution: 'Rochester Institute of Technology, Rochester, NY',
+      //   description: 'Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila'
+      // }
   ];
 
   const experience = [
     {
-      position: 'Senior graphic design specialist',
-      period: '2019 - Present',
-      company: 'Experion, New York, NY',
+      position: 'Student of Full Stack Developer',
+      period: '2023 - Present',
+      company: 'IJSE-Institute of Software Engineering',
       responsibilities: [
-        'Lead in the design, development, and implementation of the graphic, layout, and production communication materials',
-        'Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project',
-        'Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design',
-        'Oversee the efficient use of production project budgets ranging from $2,000 - $25,000'
+        'Learning HTML, CSS, JavaScript, React, React-Native, Node.js, Express, MongoDB, and other web development technologies',
+        'Building projects to apply learned skills and gain practical experience',
+        'Collaborating with peers on group assignments and projects',
+        'Participating in coding challenges and competition to enhance problem-solving skills',
       ]
     },
-    {
-      position: 'Graphic design specialist',
-      period: '2017 - 2018',
-      company: 'Stepping Stone Advertising, New York, NY',
-      responsibilities: [
-        'Developed numerous marketing programs (logos, brochures, infographics, presentations, and advertisements)',
-        'Managed up to 5 projects or tasks at a given time while under pressure',
-        'Recommended and consulted with clients on the most appropriate graphic design',
-        'Created 4+ design presentations and proposals a month for clients and account managers'
-      ]
-    }
+    // {
+    //   position: 'Graphic design specialist',
+    //   period: '2017 - 2018',
+    //   company: 'Stepping Stone Advertising, New York, NY',
+    //   responsibilities: [
+    //     'Developed numerous marketing programs (logos, brochures, infographics, presentations, and advertisements)',
+    //     'Managed up to 5 projects or tasks at a given time while under pressure',
+    //     'Recommended and consulted with clients on the most appropriate graphic design',
+    //     'Created 4+ design presentations and proposals a month for clients and account managers'
+    //   ]
+    // }
   ];
+
+    const handleDownloadCV = () => {
+    const link = document.createElement("a")
+    link.href = "src/assets/Dilini Bhagya-CV.pdf"
+    link.download = "Dilini_Bhagya-CV.pdf"
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
 
   return (
     <section id="resume" className="py-20 bg-black/90 min-h-screen">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-sm uppercase tracking-wider text-gray-400 mb-2">Resume</h2>
+          <h2 className="text-m uppercase tracking-wider text-gray-400 mb-2">Resume</h2>
           <div className="w-20 h-px bg-green-400 inline-block mb-4"></div>
           <p className="text-3xl font-bold text-white uppercase">Check My Resume</p>
         </div>
@@ -94,6 +105,17 @@ const ResumeSection: React.FC = () => {
             </div>
           </div>
         </div>
+            <button
+                    onClick={handleDownloadCV}
+                    className="inline-flex cursor-pointer items-center gap-2 px-6 py-3 rounded-3xl font-medium
+                              text-white border border-white/30 
+                                backdrop-blur-md 
+                              shadow-lg hover:shadow-xl
+                              transition-all duration-300 ease-in-out bg-green-800 hover:bg-green-500/90"
+                  >
+                    <Download size={20} className="animate-bounce-slow" />
+                    Get My Resume
+                  </button>
       </div>
     </section>
   );

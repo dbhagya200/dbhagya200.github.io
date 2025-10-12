@@ -12,7 +12,7 @@ function App() {
           <Home />
       <AboutSection />
       <ResumeSection />
-      <ServicesSection />
+      {/* <ServicesSection /> */}
       <PortfolioSection />
       <ContactSection />
     </Layout>
