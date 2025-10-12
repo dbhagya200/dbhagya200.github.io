@@ -46,7 +46,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <div 
         className="fixed inset-0 bg-cover bg-no-repeat bg-right-top bg-fixed z-0"
         style={{
-          background: '#040404 url("src/assets/img/bg3.png") top right no-repeat',
+          background: '#040404 url("/src/assets/img/bg3.png") top right no-repeat',
           backgroundSize: 'fit'
         }}
       ></div>
