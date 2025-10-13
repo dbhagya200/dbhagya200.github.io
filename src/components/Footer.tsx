@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
         <div className="text-right text-sm text-white">
           {' '}
           <a
-            href="https://bootstrapmade.com/"
+            href=""
             className="text-green-500 hover:text-white transition-colors"
             target="_blank"
             rel="noopener noreferrer"
