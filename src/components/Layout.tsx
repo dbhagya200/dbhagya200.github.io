@@ -34,7 +34,7 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import img from '../../public/bg3.png';
+import img from '../../public/img/bg3.png';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -53,7 +53,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               backgroundColor: '#040404',
               backgroundPosition: 'top right',
               backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover' // or 'contain'
+              backgroundSize: 'fit' // or 'contain'
         }}
       ></div>
       

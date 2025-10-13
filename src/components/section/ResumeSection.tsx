@@ -1,5 +1,6 @@
 import React from 'react';
 import { Download} from "lucide-react"
+import cv from '../../../public/Dilini Bhagya-CV.pdf';
 
 
 const ResumeSection: React.FC = () => {
@@ -45,7 +46,7 @@ const ResumeSection: React.FC = () => {
 
     const handleDownloadCV = () => {
     const link = document.createElement("a")
-    link.href = "src/assets/Dilini Bhagya-CV.pdf"
+    link.href = `${cv}`
     link.download = "Dilini_Bhagya-CV.pdf"
     document.body.appendChild(link)
     link.click()

@@ -1,16 +1,22 @@
 import React, { useState } from 'react';
 import { FaPlus, FaLink } from 'react-icons/fa';
+import cocothumb from '../../../public/portfolio/cocothumb.png';
+import guppyzone from '../../../public/portfolio/Guppy-Zone.png';
+import echocart from '../../../public/portfolio/EchoCart.png';
+import medicare from '../../../public/portfolio/MediCare.png';
+import notes from '../../../public/portfolio/notes.png';
+import logistics from '../../../public/portfolio/logistics.png';
 
 const PortfolioSection: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState('*');
 
   const portfolioItems = [
-    { id: 1, category: 'web', title: 'Cocothumb Project', image: 'src/assets/img/portfolio/cocothumb.png',Link:'https://github.com/dbhagya200/cocothumb' },
-    { id: 2, category: 'web', title: 'Guppy-Zone Spring-Boot Project', image: 'src/assets/img/portfolio/Guppy-Zone.png',Link:'https://github.com/dbhagya200/Guppy-Zone-Project-New' },
-    { id: 3, category: 'web', title: 'EchoCart JavaEE Project', image: 'src/assets/img/portfolio/EchoCart.png',Link:'https://github.com/dbhagya200/AAD-Assignment-1' },
-    { id: 4, category: 'web', title: 'MediCare HTML/PHP Project', image: 'src/assets/img/portfolio/MediCare.png',Link:'https://github.com/Pathum456/bhagya_project' },
-    { id: 5, category: 'app', title: 'Notes-App React-Native Project ', image: 'src/assets/img/portfolio/notes.png',Link:'https://github.com/dbhagya200/MY-Notes-MobileApp' },
-    { id: 6, category: 'web', title: 'Logistics-Management React Project', image: 'src/assets/img/portfolio/logistics.png',Link:'https://github.com/dbhagya200/Logistics-Management-System-FrontEnd' },
+    { id: 1, category: 'web', title: 'Cocothumb Project', image: `(${cocothumb})`,Link:'https://github.com/dbhagya200/cocothumb' },
+    { id: 2, category: 'web', title: 'Guppy-Zone Spring-Boot Project', image: `(${guppyzone})`,Link:'https://github.com/dbhagya200/Guppy-Zone-Project-New' },
+    { id: 3, category: 'web', title: 'EchoCart JavaEE Project', image: `(${echocart})`,Link:'https://github.com/dbhagya200/AAD-Assignment-1' },
+    { id: 4, category: 'web', title: 'MediCare HTML/PHP Project', image: `(${medicare})`,Link:'https://github.com/Pathum456/bhagya_project' },
+    { id: 5, category: 'app', title: 'Notes-App React-Native Project ', image: `(${notes})`,Link:'https://github.com/dbhagya200/MY-Notes-MobileApp' },
+    { id: 6, category: 'web', title: 'Logistics-Management React Project', image: `(${logistics})`,Link:'https://github.com/dbhagya200/Logistics-Management-System-FrontEnd' },
     // { id: 7, category: 'card', title: 'Card 1', image: '' },
     // { id: 8, category: 'card', title: 'Card 3', image: '' },
     // { id: 9, category: 'web', title: 'Web 3', image: '' },

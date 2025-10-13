@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../index.css';
 import {  FaChevronRight } from 'react-icons/fa';
+import img from '../../../public/img/nbg-1.png';
 // import { RiStoreLine, RiBarChartBoxLine, RiCalendarTodoLine, RiPaintBrushLine, RiDatabase2Line, RiGradienterLine } from 'react-icons/ri';
 
 const AboutSection: React.FC = () => {
@@ -52,7 +53,7 @@ const AboutSection: React.FC = () => {
         <div className="grid md:grid-cols-3 gap-12 mb-16">
           <div className="md:col-span-1">
             <img
-              src="src/assets/img/nbg-1.png"
+              src={img}
               alt="dilini bhagya"
               className="w-full h-120 object-cover rounded-lg"
             />
