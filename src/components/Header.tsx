@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { FaTwitter, FaFacebook, FaLinkedin, FaBars, FaGithub } from 'react-icons/fa';
+import logo from '../../public/img/bg3.png';
 
 const Header: React.FC = () => {
   const [activeSection, setActiveSection] = useState('header');
@@ -123,7 +124,7 @@ const Header: React.FC = () => {
           <div className="flex items-center justify-between w-full">
             <h1 className="text-xl md:text-2xl font-bold text-white font-poppins">
               <img
-                src="src/assets/img/bg3.png"
+                src={logo}
                 alt="Logo"
                 className="inline-block w-13 h-13 mr-1 p-1 rounded-full object-cover "
               />

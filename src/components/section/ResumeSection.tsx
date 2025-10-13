@@ -111,6 +111,7 @@ const ResumeSection: React.FC = () => {
                     className="inline-flex cursor-pointer items-center gap-2 px-6 py-3 rounded-3xl font-medium
                               text-white border border-white/30 
                                 backdrop-blur-md 
+                                m-5
                               shadow-lg hover:shadow-xl
                               transition-all duration-300 ease-in-out bg-green-800 hover:bg-green-500/90"
                   >

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../index.css';
 import {  FaChevronRight } from 'react-icons/fa';
-import img from '../../../public/img/nbg-1.png';
+import img from '../../../public/img/nbg-2.png';
 // import { RiStoreLine, RiBarChartBoxLine, RiCalendarTodoLine, RiPaintBrushLine, RiDatabase2Line, RiGradienterLine } from 'react-icons/ri';
 
 const AboutSection: React.FC = () => {
@@ -55,7 +55,7 @@ const AboutSection: React.FC = () => {
             <img
               src={img}
               alt="dilini bhagya"
-              className="w-full h-120 object-cover rounded-lg"
+              className="w-full h-160 object-cover rounded-lg bg-no-repeat "
             />
           </div>
           <div className="md:col-span-2">

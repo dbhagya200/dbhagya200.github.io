@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaPlus, FaLink } from 'react-icons/fa';
-// import cocothumb from '../../../public/img/cocothumb.png';
-import guppyzone from '../../assets/img/Guppy-Zone.png';
+import cocothumb from '../../../public/img/cocothumb.png';
+import guppyzone from '../../../public/img/Guppy-Zone.png';
 import echocart from '../../../public/img/EchoCart.png';
 import medicare from '../../../public/img/MediCare.png';
 import notes from '../../../public/img/notes.png';
@@ -11,12 +11,12 @@ const PortfolioSection: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState('*');
 
   const portfolioItems = [
-    { id: 1, category: 'web', title: 'Cocothumb Project', image:'/img/cocothumb.png',Link:'https://github.com/dbhagya200/cocothumb' },
+    { id: 1, category: 'web', title: 'Cocothumb Project', image:cocothumb,Link:'https://github.com/dbhagya200/cocothumb' },
     { id: 2, category: 'web', title: 'Guppy-Zone Spring-Boot Project', image: guppyzone,Link:'https://github.com/dbhagya200/Guppy-Zone-Project-New' },
     { id: 3, category: 'web', title: 'EchoCart JavaEE Project', image: echocart,Link:'https://github.com/dbhagya200/AAD-Assignment-1' },
-    { id: 4, category: 'web', title: 'MediCare HTML/PHP Project', image: `(${medicare})`,Link:'https://github.com/Pathum456/bhagya_project' },
-    { id: 5, category: 'app', title: 'Notes-App React-Native Project ', image: `(${notes})`,Link:'https://github.com/dbhagya200/MY-Notes-MobileApp' },
-    { id: 6, category: 'web', title: 'Logistics-Management React Project', image: `(${logistics})`,Link:'https://github.com/dbhagya200/Logistics-Management-System-FrontEnd' },
+    { id: 4, category: 'web', title: 'MediCare HTML/PHP Project', image: medicare,Link:'https://github.com/Pathum456/bhagya_project' },
+    { id: 5, category: 'app', title: 'Notes-App React-Native Project ', image: notes,Link:'https://github.com/dbhagya200/MY-Notes-MobileApp' },
+    { id: 6, category: 'web', title: 'Logistics-Management React Project', image: logistics,Link:'https://github.com/dbhagya200/Logistics-Management-System-FrontEnd' },
     // { id: 7, category: 'card', title: 'Card 1', image: '' },
     // { id: 8, category: 'card', title: 'Card 3', image: '' },
     // { id: 9, category: 'web', title: 'Web 3', image: '' },
@@ -51,7 +51,7 @@ const PortfolioSection: React.FC = () => {
                 onClick={() => setActiveFilter(filter.key)}
                 className={`px-6 py-2 rounded-full transition-all duration-300 font-semibold uppercase text-sm ${
                   activeFilter === filter.key
-                    ? 'bg-green-500 text-white'
+                    ? 'bg-green-700 text-white'
                     : 'text-white/70 hover:text-white hover:bg-white/10'
                 }`}
               >

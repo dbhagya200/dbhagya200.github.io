@@ -42,18 +42,18 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="min-h-screen text-white relative">
+    <div className="min-h-screen text-white relative overflow-hidden">
       {/* Background */}
       <div 
-        className="fixed inset-0 bg-cover bg-no-repeat bg-right-top bg-fixed z-0"
+        className="fixed inset-0 bg-no-repeat bg-fixed z-0"
         style={{
           // background: '#040404 url("/src/assets/img/bg3.png") top right no-repeat',
           // backgroundSize: 'fit'
               backgroundImage:  `url(${img})`,
               backgroundColor: '#040404',
-              backgroundPosition: 'top right',
+              backgroundPosition: 'top center',
               backgroundRepeat: 'no-repeat',
-              backgroundSize: 'fit' // or 'contain'
+              backgroundSize: 'cover' // or 'contain'
         }}
       ></div>
       
