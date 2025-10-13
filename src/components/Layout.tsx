@@ -34,6 +34,7 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import img from '../../public/bg3.png';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -48,7 +49,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         style={{
           // background: '#040404 url("/src/assets/img/bg3.png") top right no-repeat',
           // backgroundSize: 'fit'
-              backgroundImage: 'url("public/bg3.png")',
+              backgroundImage:  `url(${img})`,
               backgroundColor: '#040404',
               backgroundPosition: 'top right',
               backgroundRepeat: 'no-repeat',
