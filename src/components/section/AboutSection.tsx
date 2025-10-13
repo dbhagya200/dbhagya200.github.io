@@ -55,7 +55,7 @@ const AboutSection: React.FC = () => {
             <img
               src={img}
               alt="dilini bhagya"
-              className="w-full h-160 object-cover rounded-lg bg-no-repeat "
+              className="w-full h-150 object-cover rounded-lg bg-no-repeat "
             />
           </div>
           <div className="md:col-span-2">
