@@ -11,7 +11,7 @@ const PortfolioSection: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState('*');
 
   const portfolioItems = [
-    { id: 1, category: 'web', title: 'Cocothumb Project', image: `(${cocothumb})`,Link:'https://github.com/dbhagya200/cocothumb' },
+    { id: 1, category: 'web', title: 'Cocothumb Project', image: '../../../public/portfolio/cocothumb.png',Link:'https://github.com/dbhagya200/cocothumb' },
     { id: 2, category: 'web', title: 'Guppy-Zone Spring-Boot Project', image: `(${guppyzone})`,Link:'https://github.com/dbhagya200/Guppy-Zone-Project-New' },
     { id: 3, category: 'web', title: 'EchoCart JavaEE Project', image: `(${echocart})`,Link:'https://github.com/dbhagya200/AAD-Assignment-1' },
     { id: 4, category: 'web', title: 'MediCare HTML/PHP Project', image: `(${medicare})`,Link:'https://github.com/Pathum456/bhagya_project' },
