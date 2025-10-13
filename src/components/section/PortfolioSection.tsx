@@ -13,7 +13,7 @@ const PortfolioSection: React.FC = () => {
   const portfolioItems = [
     { id: 1, category: 'web', title: 'Cocothumb Project', image:'/img/cocothumb.png',Link:'https://github.com/dbhagya200/cocothumb' },
     { id: 2, category: 'web', title: 'Guppy-Zone Spring-Boot Project', image: guppyzone,Link:'https://github.com/dbhagya200/Guppy-Zone-Project-New' },
-    { id: 3, category: 'web', title: 'EchoCart JavaEE Project', image: `(${echocart})`,Link:'https://github.com/dbhagya200/AAD-Assignment-1' },
+    { id: 3, category: 'web', title: 'EchoCart JavaEE Project', image: echocart,Link:'https://github.com/dbhagya200/AAD-Assignment-1' },
     { id: 4, category: 'web', title: 'MediCare HTML/PHP Project', image: `(${medicare})`,Link:'https://github.com/Pathum456/bhagya_project' },
     { id: 5, category: 'app', title: 'Notes-App React-Native Project ', image: `(${notes})`,Link:'https://github.com/dbhagya200/MY-Notes-MobileApp' },
     { id: 6, category: 'web', title: 'Logistics-Management React Project', image: `(${logistics})`,Link:'https://github.com/dbhagya200/Logistics-Management-System-FrontEnd' },
