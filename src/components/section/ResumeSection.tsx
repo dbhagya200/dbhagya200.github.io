@@ -9,7 +9,7 @@ const ResumeSection: React.FC = () => {
       degree: 'Graduate Diploma, Computer Software Engineering',
       period: '2023 - 2025',
       institution: 'IJSE-Institute of Software Engineering',
-      description: 'Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend'
+      description: 'Pursuing a comprehensive program focused on software engineering principles, system design, and modern development practices. The course covers full-stack development, object-oriented programming, database management, software architecture, and project management. Emphasis is placed on practical, industry-oriented learning through real-world projects and teamwork, preparing for professional roles in software development and IT solutions.'
     },
       // {
       //   degree: 'Bachelor of Fine Arts & Graphic Design',
