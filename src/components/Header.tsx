@@ -4,7 +4,7 @@ import { FaTwitter, FaFacebook, FaLinkedin, FaBars, FaGithub } from 'react-icons
 import logo from '../../public/img/bg3.png';
 
 const Header: React.FC = () => {
-  const [activeSection, setActiveSection] = useState('header');
+  const [activeSection, setActiveSection] = useState('home');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -16,7 +16,7 @@ const Header: React.FC = () => {
         setIsScrolled(false);
       }
 
-      const sections = ['header', 'about', 'resume', 'services', 'portfolio', 'contact'];
+      const sections = ['home', 'about', 'resume', 'services', 'portfolio', 'contact'];
       const scrollY = window.pageYOffset + 100;
 
       sections.forEach(section => {
@@ -37,7 +37,7 @@ const Header: React.FC = () => {
   }, []);
 
   const navItems = [
-    { href: 'header', label: 'Home' },
+    { href: 'home', label: 'Home' },
     { href: '#about', label: 'About' },
     { href: '#resume', label: 'Resume' },
     // { href: '#services', label: 'Services' },
@@ -55,7 +55,7 @@ const Header: React.FC = () => {
   return (
     
     <header 
-      id="header" 
+      id="home" 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${
         isScrolled 
           ? 'h-20 bg-black/90' 
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
           // Fullscreen header when not scrolled
           <div className="ml-15">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 font-sans">
-              <a href="#header" className="text-white hover:text-white">
+              <a href="#home" className="text-white hover:text-white">
                 Dilini Bhagya
               </a>
             </h1>
