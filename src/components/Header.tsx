@@ -49,7 +49,7 @@ const Header: React.FC = () => {
     { href: 'https://x.com/bhagya_dil14146', icon: FaTwitter, name: 'Twitter' },
     { href: 'https://www.facebook.com/sanduni.bhagya.904', icon: FaFacebook, name: 'Facebook' },
     { href: 'https://github.com/dbhagya200', icon: FaGithub, name: 'GitHub' },
-    { href: 'https://www.linkedin.com/in/dilini-bhagya-warnekulasooriya/', icon: FaLinkedin, name: 'LinkedIn' }
+    { href: 'https://www.linkedin.com/in/dilini-bhagya-warnakulasooriya/', icon: FaLinkedin, name: 'LinkedIn' }
   ];
 
   return (
