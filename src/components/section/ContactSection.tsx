@@ -57,7 +57,7 @@ const ContactSection: React.FC = () => {
     { href: 'https://x.com/bhagya_dil14146', icon: FaTwitter, name: 'Twitter' },
     { href: 'https://www.facebook.com/sanduni.bhagya.904', icon: FaFacebook, name: 'Facebook' },
     { href: 'https://github.com/dbhagya200', icon: FaGithub, name: 'GitHub' },
-    { href: 'https://www.linkedin.com/in/dilini-bhagya-warnekulasooriya/', icon: FaLinkedin, name: 'LinkedIn' },
+    { href: 'https://www.linkedin.com/in/dilini-bhagya-warnakulasooriya/', icon: FaLinkedin, name: 'LinkedIn' },
   ];
 
   return (
@@ -65,7 +65,9 @@ const ContactSection: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-m uppercase tracking-wider text-gray-400 mb-2">Contact</h2>
-          <div className="w-20 h-px bg-green-400 inline-block mb-4"></div>
+          {React.createElement('div', {
+            className: 'w-20 h-px bg-green-400 inline-block mb-4'
+          })}
           <p className="text-3xl font-bold text-white uppercase">Contact Me</p>
         </div>
 
