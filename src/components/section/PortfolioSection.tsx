@@ -6,6 +6,7 @@ import echocart from '../../../public/img/EchoCart.png';
 import medicare from '../../../public/img/MediCare.png';
 import notes from '../../../public/img/notes.png';
 import logistics from '../../../public/img/logistics.png';
+import freelance from '../../../public/img/Freelance.png';
 
 const PortfolioSection: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState('*');
@@ -17,6 +18,7 @@ const PortfolioSection: React.FC = () => {
     { id: 4, category: 'web', title: 'MediCare HTML/PHP Project', image: medicare,Link:'https://github.com/Pathum456/bhagya_project' },
     { id: 5, category: 'app', title: 'Notes-App React-Native Project ', image: notes,Link:'https://github.com/dbhagya200/MY-Notes-MobileApp' },
     { id: 6, category: 'web', title: 'Logistics-Management React Project', image: logistics,Link:'https://github.com/dbhagya200/Logistics-Management-System-FrontEnd' },
+    { id: 7, category: 'web', title: 'Freelance Project', image: freelance,Link:'https://github.com/dbhagya200/Tourism-website' },
     // { id: 7, category: 'card', title: 'Card 1', image: '' },
     // { id: 8, category: 'card', title: 'Card 3', image: '' },
     // { id: 9, category: 'web', title: 'Web 3', image: '' },
@@ -71,7 +73,7 @@ const PortfolioSection: React.FC = () => {
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-110"
+                className="w-full h-60 object-fit p-2 transition-transform duration-300 group-hover:scale-110"
               />
               
               {/* Overlay */}
@@ -79,29 +81,26 @@ const PortfolioSection: React.FC = () => {
                 <div className="text-center translate-y-8 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300 relative w-full">
                   
                   {/* Border Animation */}
-                  <div className="absolute top-4 left-4 right-4 bottom-4 border-t border-l border-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200"></div>
-                  <div className="absolute top-4 left-4 right-4 bottom-4 border-b border-r border-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200"></div>
-                  
-                  <h4 className="text-white text-xl font-semibold mb-2">{item.title}</h4>
-                  <p className="text-gray-300 uppercase text-sm">{item.category}</p>
-                  <div className="flex justify-center gap-4 mt-4 portfolio-links">
-                    <a
+                    <h4 className="text-white text-xl font-semibold mb-2">{item.title}</h4>
+                      <p className="text-gray-300 uppercase text-sm">{item.category}</p>
+                      <div className="flex justify-center gap-4 mt-4 portfolio-links">
+                      <a
                       href={item.image}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-white text-2xl hover:text-green-300 transition-colors portfolio-lightbox"
-                    >
+                      >
                       <FaPlus />
-                    </a>
+                      </a>
                     <a
                       href={item.Link}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-white text-2xl hover:text-green-300 transition-colors portfolio-details-lightbox"
-                    >
+                      >
                       <FaLink />
-                    </a>
-                  </div>
+                      </a>
+                </div>
                 </div>
               </div>
             </div>

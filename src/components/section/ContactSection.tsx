@@ -7,7 +7,7 @@ const ContactSection: React.FC = () => {
     email: '',
     message: ''
   });
-
+  const [isSubmit] = useState(false);
   
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -157,7 +157,7 @@ const ContactSection: React.FC = () => {
           <div className="text-center">
             <button
               type="submit"
-              className="bg-green-600 text-white px-8 py-3 rounded hover:bg-green-800 transition-colors"
+              className={`bg-green-600 text-white px-8 py-3 rounded hover:bg-green-800 transition-colors clearfix ${isSubmit ? 'reload' : ''}`}
             >
               Send Message
             </button>

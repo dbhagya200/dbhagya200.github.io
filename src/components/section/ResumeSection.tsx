@@ -1,6 +1,6 @@
 import React from 'react';
 import { Download} from "lucide-react"
-import cv from '../../../public/Dilini Bhagya-CV.pdf';
+import cv from '../../../public/Dilini Bhagya Warnakulasooriya.pdf';
 
 
 const ResumeSection: React.FC = () => {
@@ -10,6 +10,12 @@ const ResumeSection: React.FC = () => {
       period: '2023 - 2025',
       institution: 'IJSE-Institute of Software Engineering',
       description: 'Pursuing a comprehensive program focused on software engineering principles, system design, and modern development practices. The course covers full-stack development, object-oriented programming, database management, software architecture, and project management. Emphasis is placed on practical, industry-oriented learning through real-world projects and teamwork, preparing for professional roles in software development and IT solutions.'
+    },
+    {
+      degree: 'Bachelor of Science (hons) in Computing',
+      period: 'Pending',
+      institution: 'University of Bolton (UK)',
+      description: 'Building a strong technical foundation in software development, systems architecture, and modern IT solutions. Through hands-on coursework and practical projects, developed sharp analytical problem-solving skills and experience with the full software development lifecycle.'
     },
       // {
       //   degree: 'Bachelor of Fine Arts & Graphic Design',
@@ -22,13 +28,35 @@ const ResumeSection: React.FC = () => {
   const experience = [
     {
       position: 'Student of Full Stack Developer',
-      period: '2023 - Present',
+      period: '2023 - 2025',
       company: 'IJSE-Institute of Software Engineering',
       responsibilities: [
-        'Learning HTML, CSS, JavaScript, React, React-Native, Node.js, Express, MongoDB, and other web development technologies',
-        'Building projects to apply learned skills and gain practical experience',
-        'Collaborating with peers on group assignments and projects',
-        'Participating in coding challenges and competition to enhance problem-solving skills',
+        'Learning HTML, CSS, JavaScript, React, React-Native, Node.js, Express, MongoDB, and other web development technologies.',
+        'Building projects to apply learned skills and gain practical experience.',
+        'Collaborating with peers on group assignments and projects.',
+        'Participating in coding challenges and competition to enhance problem-solving skills.',
+      ]
+    },
+    {
+      position: 'Intern Software Engineer',
+      period: '2026/02 - 2026/08',
+      company: 'RedCode Solution',
+      responsibilities: [
+        'Engineered a PHP Laravel and Vite Smart City management system,boosting municipal operation efficiency.',
+        'Developed Expo-based Citizen and Driver mobile apps for real-timegarbage tracking, improving field coordination.',
+        'Built a dynamic CV generation web app using React and Next.js, increasing resume creation speed.',
+        'Maintained clean component architecture and RESTful APIs, ensuring 99% system uptime across web and mobile platforms.',
+      ]
+    },
+    {
+      position: 'Freelance Web Developer',
+      period: '2025 - Present',
+      company: 'Ceylon Visit Tours',
+      responsibilities: [
+        'Developed and deployed "Ceylon Visit Tours," a fully responsive travel web app using React and TypeScript.',
+        'Streamlined UI and booking flows, increasing client inquiries.',
+        'Optimized frontend performance, reducing page load times by 25% across all devices.',
+        'Achieved 100% component reusability through clean architecture for a maintainable codebase.',
       ]
     },
     // {
@@ -47,7 +75,7 @@ const ResumeSection: React.FC = () => {
     const handleDownloadCV = () => {
     const link = document.createElement("a")
     link.href = `${cv}`
-    link.download = "Dilini_Bhagya-CV.pdf"
+    link.download = "Dilini_Bhagya's-CV.pdf"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
@@ -63,25 +91,8 @@ const ResumeSection: React.FC = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Education */}
-          <div>
-            <h3 className="text-2xl font-bold text-white mb-8">Education</h3>
-            <div className="space-y-8">
-              {education.map((edu, index) => (
-                <div key={index} className="relative pl-8 border-l-2 border-green-500">
-                  <div className="absolute -left-2.5 top-0 w-4 h-4 bg-green-500 rounded-full border-2 border-green-500"></div>
-                  <h4 className="text-lg font-semibold text-green-500 mb-2 uppercase">{edu.degree}</h4>
-                  <h5 className="text-green-500 font-medium mb-2 bg-white/15 px-4 py-1 inline-block rounded">
-                    {edu.period}
-                  </h5>
-                  <p className="text-gray-300 mb-2 italic">{edu.institution}</p>
-                  <p className="text-gray-300">{edu.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
 
-          {/* Experience */}
+           {/* Experience */}
           <div>
             <h3 className="text-2xl font-bold text-white mb-8">Professional Experience</h3>
             <div className="space-y-8">
@@ -105,6 +116,26 @@ const ResumeSection: React.FC = () => {
               ))}
             </div>
           </div>
+
+          {/* Education */}
+          <div>
+            <h3 className="text-2xl font-bold text-white mb-8">Education</h3>
+            <div className="space-y-8">
+              {education.map((edu, index) => (
+                <div key={index} className="relative pl-8 border-l-2 border-green-500">
+                  <div className="absolute -left-2.5 top-0 w-4 h-4 bg-green-500 rounded-full border-2 border-green-500"></div>
+                  <h4 className="text-lg font-semibold text-green-500 mb-2 uppercase">{edu.degree}</h4>
+                  <h5 className="text-green-500 font-medium mb-2 bg-white/15 px-4 py-1 inline-block rounded">
+                    {edu.period}
+                  </h5>
+                  <p className="text-gray-300 mb-2 italic">{edu.institution}</p>
+                  <p className="text-gray-300">{edu.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+         
         </div>
             <button
                     onClick={handleDownloadCV}
